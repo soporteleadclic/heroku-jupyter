@@ -11,9 +11,10 @@ def query(consulta):
 	conn = pg.DB(host="localhost", user="USERNAME", passwd="PASSWORD", dbname="DBNAME")
 
 	result = conn.query(consulta)
+	print (result)
 	
-	print ("Nombre de la tabla")
-	for i in result.getresult() :
-		print (i[1])#+"\t****\t"+i[2])
+	#print ("Nombre de la tabla")
+	#for i in result.getresult() :
+	#	print (i[1])#+"\t****\t"+i[2])
 
 conn.close()
