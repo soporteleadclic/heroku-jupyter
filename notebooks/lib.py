@@ -8,7 +8,7 @@ def query(consulta):
 	username = 'u3jk39shtaohhp'
 	password = 'p5gvn36g2q076783i6s3j6hqqfq'
 	database = 'dabdmj8rgg0lfa'
-	conn = pg.DB(host="localhost", user="USERNAME", passwd="PASSWORD", dbname="DBNAME")
+	conn = pg.DB(host=hostname, user=username, passwd=password, dbname=database)
 
 	result = conn.query(consulta)
 	print (result)
@@ -16,5 +16,4 @@ def query(consulta):
 	#print ("Nombre de la tabla")
 	#for i in result.getresult() :
 	#	print (i[1])#+"\t****\t"+i[2])
-
-conn.close()
+	conn.close()
