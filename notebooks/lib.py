@@ -1,2 +1,2 @@
 def helloworld():
-   print "hello"
+   print ("hello")
