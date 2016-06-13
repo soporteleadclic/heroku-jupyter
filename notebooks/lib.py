@@ -2,6 +2,7 @@ def helloworld():
 	print ("hello")
    
 def query(consulta):
+	import os
 	os.system("pip install pygresql")
 	import pg
 	#Base de datos de Cesce
