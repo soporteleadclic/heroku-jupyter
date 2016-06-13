@@ -2,6 +2,7 @@ def helloworld():
 	print ("hello")
    
 def query(consulta):
+	os.system("pip install pygresql")
 	import pg
 	#Base de datos de Cesce
 	hostname = 'ec2-54-247-190-226.eu-west-1.compute.amazonaws.com'
