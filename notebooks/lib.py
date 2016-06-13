@@ -1,11 +1,21 @@
+def help():
+	print("helloworld() -> Escribe \"hello\"")
+	print("basesDeDatos() -> Devuelve listado de bases de datos disponibles")
+	print("query(db consulta) -> Recibe numero de base de datos y consulta SELECT y escribe resultado de query a la base de datos")
+
 def helloworld():
 	print ("hello")
-   
-def query(consulta):
+
+def basesDeDatos():
+	print ("1- Base de datos de Cesce")
+	print ("2- Base de datos de Ejemplo1")
+	print ("3- Base de datos de Ejemplo2")
+	
+def query(db consulta):
 	import os
 	os.system("pip install pygresql")
 	import pg
-	#Base de datos de Cesce
+	#Base de datos de Cesce (debe depender del parámetro db que recibe)
 	hostname = 'ec2-54-247-190-226.eu-west-1.compute.amazonaws.com'
 	username = 'u3jk39shtaohhp'
 	password = 'p5gvn36g2q076783i6s3j6hqqfq'
@@ -15,7 +25,4 @@ def query(consulta):
 	result = conn.query(consulta)
 	print (result)
 	
-	#print ("Nombre de la tabla")
-	#for i in result.getresult() :
-	#	print (i[1])#+"\t****\t"+i[2])
 	conn.close()
