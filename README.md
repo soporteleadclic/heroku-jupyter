@@ -4,7 +4,7 @@
 
 Use this application to deploy [Jupyter Notebook](https://jupyter.org/) to heroku or CloudFoundry. If a postres database is available, [pgcontents](https://github.com/quantopian/pgcontents) is used as notebook storage.
 
-## Quick start
+## Quick    start
 
 Jupyter will not start, if the environment variable `JUPYTER_NOTEBOOK_PASSWORD`
 was not set.
