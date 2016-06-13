@@ -9,7 +9,7 @@ try:
     ### Password protection ###
     passwd = os.environ['JUPYTER_NOTEBOOK_PASSWORD']
     c.NotebookApp.password = IPython.lib.passwd(passwd)
-	c.NotebookApp.password = "1234"
+	#c.NotebookApp.password = "1234"
 	
     ### PostresContentsManager ###
     database_url = os.getenv('DATABASE_URL', None)
