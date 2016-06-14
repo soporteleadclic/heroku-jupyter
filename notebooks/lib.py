@@ -2,7 +2,7 @@ def help():
 	print("helloworld()\n   -> Escribe \"helloworld\"\n")
 	print("basesDeDatos()\n   -> Devuelve listado de bases de datos disponibles\n")
 	print("query(db, \"consulta\")\n   -> Recibe numero de base de datos y consulta SELECT y escribe resultado de query a la base de datos\n")
-	print("query(db, \"consulta\", posicionCampo)\n   -> Recibe numero de base de datos y consulta SELECT y posicion del campo y devuelve una lista con los valores del campo seleccionado (primera posicion es 0)\n")
+	print("query2(db, \"consulta\", posicionCampo)\n   -> Recibe numero de base de datos y consulta SELECT y posicion del campo y devuelve una lista con los valores del campo seleccionado (primera posicion es 0)\n")
 
 def helloworld():
 	print ("helloworld")
@@ -26,7 +26,7 @@ def query(db, consulta):
 	print (result)
 	conn.close()
 
-def query(db, consulta, posicionCampo):
+def query2(db, consulta, posicionCampo):
 	import os
 	os.system("pip install pygresql")
 	import pg
@@ -39,7 +39,7 @@ def query(db, consulta, posicionCampo):
 	conn = pg.DB(host=hostname, user=username, passwd=password, dbname=database)
 	result = conn.query(consulta)
 	for dato in result.getresult():
-		resultado.append(dato[posicionCampo])
+		respuesta.append(dato[posicionCampo])
 	print (result)
 	conn.close()	
-	return resultado
+	return respuesta
