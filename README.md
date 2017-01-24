@@ -24,9 +24,9 @@ If you forked this repository, you can link it to your heroku app afterwards.
 Push this repository to your app or fork this repository on github and link your
 repository to your heroku app.
 
-Use the [heroku-buildpack-conda](https://github.com/p-a-c-o/heroku-buildpack-conda):
+Use the [heroku-buildpack-conda](https://github.com/soporteleadclic/heroku-buildpack-conda):
 ```
-$ heroku buildpacks:set https://github.com/p-a-c-o/heroku-buildpack-conda.git -a <your_app>
+$ heroku buildpacks:set https://github.com/soporteleadclic/heroku-buildpack-conda.git -a <your_app>
 ```
 
 To protect your notebooks a random password is used until you set the environment variable `JUPYTER_NOTEBOOK_PASSWORD`:
