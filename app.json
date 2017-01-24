@@ -3,6 +3,12 @@
   "buildpacks": [
     { "url": "https://github.com/soporteleadclic/heroku-buildpack-conda" }
   ],
+  "env": {
+    "JUPYTER_NOTEBOOK_PASSWORD": {
+      "description": "IMPORTANT! Set a secure password.",
+      "value": "admin"
+    }
+  },   
   "addons": [
     "heroku-postgresql:hobby-dev"
   ]
