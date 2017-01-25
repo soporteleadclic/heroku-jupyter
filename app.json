@@ -5,11 +5,21 @@
   ],
   "env": {
     "JUPYTER_NOTEBOOK_PASSWORD": {
-      "description": "IMPORTANT! Set a secure password.",
       "value": "admin"
+    },
+    "REDIS_URL": {
+      "value": "redis://h:p19b8c0530ec25a1a1bf791cfe642f36636c58f9bca16179d3fac5b566eeddf33@ec2-54-247-123-177.eu-west-1.compute.amazonaws.com:7129"
+    },
+    "DATABASE_URL": {
+      "value": "postgres://uaan3afjlla7qq:p3ko2sredkqvnpcennou713esuh@ec2-79-125-113-131.eu-west-1.compute.amazonaws.com:5432/dbn84cdh4hn9i3"
     }
   },   
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "Standard-2X"
+    }
+  }, 
   "addons": [
-    "heroku-postgresql:hobby-dev"
   ]
 }
