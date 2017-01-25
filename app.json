@@ -1,6 +1,7 @@
 {
   "name": "jupyter",
   "buildpacks": [
+    { "url": "https://github.com/soporteleadclic/heroku-vim-buildpack" },
     { "url": "https://github.com/soporteleadclic/heroku-buildpack-conda" }
   ],
   "env": {
