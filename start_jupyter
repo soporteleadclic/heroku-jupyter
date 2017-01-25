@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-conda install -y wget workerpool parsel memory_profiler libuuid jpeg joblib basemap
+conda install -y wget workerpool parsel memory_profiler libuuid jpeg joblib basemap &
 
 pgcontents init -l $DATABASE_URL --no-prompt
 
