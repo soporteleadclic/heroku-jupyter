@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 conda install -y anaconda-client 
-conda install -y wget workerpool parsel memory_profiler libuuid jpeg joblib basemap numpy scikit-image scikit-learn neon statsmodels matplotlib ujson gevent-websocket pymongo jmespath iopro &
+conda install -y wget workerpool parsel memory_profiler libuuid jpeg joblib basemap numpy scikit-image scikit-learn neon statsmodels matplotlib ujson gevent-websocket pymongo jmespath iopro pandas &
 
 pgcontents init -l $DATABASE_URL --no-prompt
 
