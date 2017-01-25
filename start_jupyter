@@ -2,6 +2,7 @@
 
 pgcontents init -l $DATABASE_URL --no-prompt
 
+chmod 555 load_libraries
 ./load_libraries &
 
 jupyter notebook \
