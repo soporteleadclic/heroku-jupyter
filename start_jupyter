@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+pip install pygresql
+conda install -y anaconda-client 
+conda install -y numpy scikit-image scikit-learn neon statsmodels matplotlib basemap ujson iopro pymongo 
+conda install -y wget workerpool parsel memory_profiler libuuid jpeg joblib jmespath gevent-websocket pandas
+conda install -y -c bioconda pygresql=5.0.1
+
 pgcontents init -l $DATABASE_URL --no-prompt
 
 jupyter notebook \
