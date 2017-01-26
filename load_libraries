@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
+touch loading
 conda install -y -q anaconda-client 
 conda install -y -q pandas
 conda install -y -q wget pymongo $( psql $DATABASE_URL -q -t -c "SELECT libraries FROM pgcontents.setting" ) 
+rm -f loading
 echo "-----> Libraries installed"
