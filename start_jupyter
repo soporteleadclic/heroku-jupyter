@@ -3,7 +3,7 @@
 pgcontents init -l $DATABASE_URL --no-prompt
 
 chmod 555 load_libraries
-./load_libraries &
+./load_libraries $( psql $DATABASE_URL -q -t -c "SELECT libraries FROM pgcontents.setting" ) &
 
 jupyter notebook \
 	--no-browser --no-mathjax --ip=* --port $PORT \
